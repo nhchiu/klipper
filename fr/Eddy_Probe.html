@@ -46,8 +46,8 @@
   
 
 
-  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-138371409-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-VEN1PGNQL4"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-VEN1PGNQL4",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEN1PGNQL4"></script>
 
 
     
@@ -414,10 +414,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_1">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Installation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="Installation.html" class="md-nav__link">
         Installation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OctoPrint.html" class="md-nav__link">
+        OctoPrint pour Klipper
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1063,12 +1110,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       
       
@@ -1225,6 +1274,184 @@
 
             
           
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sonde inductive à courants de Foucault
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Eddy_Probe.html" class="md-nav__link md-nav__link--active">
+        Sonde inductive à courants de Foucault
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#probing-mechanisms" class="md-nav__link">
+    Probing mechanisms
+  </a>
+  
+    <nav class="md-nav" aria-label="Probing mechanisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-probing-method" class="md-nav__link">
+    Default probing method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scan-probing-method" class="md-nav__link">
+    "scan" probing method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapid_scan-probing-method" class="md-nav__link">
+    "rapid_scan" probing method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tap-probing-method" class="md-nav__link">
+    "tap" probing method
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calibrating-drive-current" class="md-nav__link">
+    Calibrating drive current
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibrating-z-heights" class="md-nav__link">
+    Calibrating Z heights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tap-calibration" class="md-nav__link">
+    Tap calibration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performing-initial-calibration-when-homing-with-probe" class="md-nav__link">
+    Performing initial calibration when homing with probe
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thermal-drift-calibration" class="md-nav__link">
+    Thermal Drift Calibration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors-description" class="md-nav__link">
+    Errors description
+  </a>
+  
+    <nav class="md-nav" aria-label="Errors description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#possible-homing-errors-and-actionables" class="md-nav__link">
+    Possible homing errors and actionables:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possible-tap-errors-and-actionables" class="md-nav__link">
+    Possible TAP errors and actionables:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Load_Cell.html" class="md-nav__link">
+        Cellules de charge
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1365,6 +1592,26 @@
   <a href="#errors-description" class="md-nav__link">
     Errors description
   </a>
+  
+    <nav class="md-nav" aria-label="Errors description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#possible-homing-errors-and-actionables" class="md-nav__link">
+    Possible homing errors and actionables:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possible-tap-errors-and-actionables" class="md-nav__link">
+    Possible TAP errors and actionables:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1536,7 +1783,7 @@ z: 3.010 # noise 0.000700mm, MAD_Hz=9.000
 </ul>
 <p>As one may conclude, the calibration process outlined above is more challenging and time consuming than most other procedures. It may require practice and several attempts to achieve an optimal calibration.</p>
 <h2 id="errors-description">Errors description<a class="headerlink" href="#errors-description" title="Permanent link">&para;</a></h2>
-<p>Possible homing errors and actionables:</p>
+<h3 id="possible-homing-errors-and-actionables">Possible homing errors and actionables:<a class="headerlink" href="#possible-homing-errors-and-actionables" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Sensor error<ul>
 <li>Check logs for detailed error</li>
@@ -1578,6 +1825,33 @@ z: 3.010 # noise 0.000700mm, MAD_Hz=9.000
 <p>On some sensors, it is not possible to completely avoid amplitude warning indicator.</p>
 <p>You can try to redo the <code>LDC_CALIBRATE_DRIVE_CURRENT</code> calibration at work temperature or increase <code>reg_drive_current</code> by 1-2 from the calibrated value.</p>
 <p>Generally, it is like an engine check light. It may indicate an issue.</p>
+<h3 id="possible-tap-errors-and-actionables">Possible TAP errors and actionables:<a class="headerlink" href="#possible-tap-errors-and-actionables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>insufficient lift (A vs B) - too small Z window received by the code<ul>
+<li>LIFT_SPEED/printer.max_z_velocity too low - must be at least 2.5 Recommended &gt;0.5 RPS. For motor cogging reasons.</li>
+<li>printer.max_z_accel too low - must be larger 35 mm/s^2. Recommended 300 mm/s^2.</li>
+<li>SAMPLE_RETRACT_DIST too low Recommended &gt;2 mm.</li>
+</ul>
+</li>
+<li>no contact found at z=Z (slope delta A vs B) - retraction analysis outputs not expected data. Often toolhead has stopped in mid-air because of the measurement noise.<ul>
+<li>Too high printer.max_z_accel - Z resonances, consider Z input shaper</li>
+<li>Mechanical vibrations - ex. toolhead fan</li>
+<li>Sensor noise (elevated chamber/bed temperature)</li>
+<li>Increase of tap_threshold normally allows to alleviate symptoms</li>
+</ul>
+</li>
+<li>invalid depress distance (Z vs A:B)<ul>
+<li>if Z &lt; A
+    - tap_threshold too low
+    - PROBE_SPEED too low
+    - printer.max_z_accel too low</li>
+<li>if Z &gt; B
+    - Large toolhead tilt (mechanical/installation issue)
+    - PROBE_SPEED too high
+    - tap_threshold too high</li>
+</ul>
+</li>
+</ul>
 
               
             </article>
@@ -1592,6 +1866,41 @@ z: 3.010 # noise 0.000700mm, MAD_Hz=9.000
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="Hall_Filament_Width_Sensor.html" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Détecteur de largeur de filament à effet hall" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Détecteur de largeur de filament à effet hall
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="Load_Cell.html" class="md-footer__link md-footer__link--next" aria-label="Suivant: Cellules de charge" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Cellules de charge
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

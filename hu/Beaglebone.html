@@ -46,8 +46,8 @@
   
 
 
-  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-138371409-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-VEN1PGNQL4"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-VEN1PGNQL4",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEN1PGNQL4"></script>
 
 
     
@@ -414,10 +414,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_1">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Installation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="Installation.html" class="md-nav__link">
         Telepítés
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OctoPrint.html" class="md-nav__link">
+        OctoPrint a Klipper-hez
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1338,6 +1385,34 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Eddy_Probe.html" class="md-nav__link">
+        Örvényáramú induktív szonda
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Load_Cell.html" class="md-nav__link">
+        Load Cells
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1617,7 +1692,7 @@ sudo service klipper start
 <p>jegyezd meg a "/tmp/klipper_host_mcu" - ez lesz a jövőbeli soros eszközöd az "mcu host" számára, ha ez a fájl nem létezik - lásd a "scripts/klipper-mcu.service" fájlt, az előző parancsok telepítették, és ez a felelős érte.</p>
 <p>A "2. felhasználási eset" esetében jegyezd meg a következőket: amikor a nyomtató konfigurációját határozod meg, mindig az "mcu host" hőmérséklet-érzékelőit kell használni, mivel az ADC-k nincsenek jelen az alapértelmezett "mcu"-ban (PRU magok). A "sensor_pin" mintakonfigurációja az extruder és a fűtött ágy számára elérhető a "generic-cramps.cfg"-ben. Bármely más GPIO-t használhatsz közvetlenül az "mcu host"-ból, ha így hivatkozol rájuk: "host:gpiochip1/gpio17", de ezt kerülni kell, mert ez további terhelést jelent a fő CPU-ra, és valószínűleg nem tudja használni a léptető vezérlésére.</p>
 <h2 id="hatralevo-konfiguracio">Hátralevő konfiguráció<a class="headerlink" href="#hatralevo-konfiguracio" title="Permanent link">&para;</a></h2>
-<p>Fejezd be a telepítést a Klipper konfigurálásával a <a href="Installation.html#configuring-octoprint-to-use-klipper">Telepítés</a> fődokumentumban található utasítások szerint.</p>
+<p>Complete the installation by configuring Klipper following the instructions in the main <a href="Installation.html#configuring-klipper">Installation</a> document.</p>
 <h2 id="nyomtatas-a-beaglebone-on">Nyomtatás a Beaglebone-on<a class="headerlink" href="#nyomtatas-a-beaglebone-on" title="Permanent link">&para;</a></h2>
 <p>Sajnos a Beaglebone processzor néha nehezen tudja jól futtatni az OctoPrintet. Előfordult már, hogy összetett nyomtatásoknál a nyomtatás akadozott (a nyomtató gyorsabban mozog, mint ahogy az OctoPrint mozgatási parancsokat tud küldeni). Ha ez előfordul, fontold meg a „virtual_sdcard” funkció használatát (a részletekért lásd a <a href="Config_Reference.html#virtual_sdcard">Konfigurációs referencia</a>) pontot, hogy közvetlenül a Klipperből nyomtass, és kapcsold ki a DEBUG vagy VERBOSE naplózási opciókat, ha engedélyezted őket.</p>
 <h2 id="avr-mikrovezerlo-kod-epitese">AVR mikrovezérlő kód építése<a class="headerlink" href="#avr-mikrovezerlo-kod-epitese" title="Permanent link">&para;</a></h2>
